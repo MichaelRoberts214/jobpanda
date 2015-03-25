@@ -245,6 +245,7 @@ var JobStore = Reflux.createStore({
     this.pushChanges();
   },
   onEdit: function(job) {
+    console.log("asdfasdfasdf");
     for (var i = 0; i < _jobs.length; i++) {
       if(_jobs[i]._id === job._id) {
         _jobs[i].mutable = job.mutable;
